@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Etch A Sketch</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            Etch A Sketch
+        </div>
+        <div class="content">
+            <div class="sidebar">
+                <div>
+                    <input type="color" class="color-selector" value="#000000" 
+                    id="color-selector" name="color-selector" >
+                </div>
+                <div>
+                    <button type="button" id="button-color">
+                        Color Mode
+                    </button>
+                </div>
+                <div>
+                    <button type="button" id="button-rainbow">
+                        Rainbow Mode
+                    </button>
+                </div>
+                <div>
+                    <button type="button" id="button-eraser">
+                        Eraser
+                    </button>
+                </div>
+                <div>
+                    <button type="button" id="button-clear">
+                        Clear
+                    </button>
+                </div>
+                <div>
+                    <div id="range-display"></div>
+                    <p id ="range-size-text">16 x 16 </p>
+                    <input type="range" id="range-size" name="size" 
+                    min="0" max="64" value="16" step="2">
+                </div>
+            </div>
+            <div id="grid-container">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
